@@ -21,11 +21,12 @@ namespace ObjectOrientedChallengeFootball
             {
                 for (int i = numOfTeams; i > 0; i--)
                 {
+                    int r = 0; //round
                     if (i == 1 && numOfTeams % 2 != 0)
                     {
-                        team[i].Result = "Automatic Win";
-                        team[i].Round = numOfMatches + 1;
-                        team[i].ByeIn = "Yes";
+                        Rounds[r].Result = "Automatic Win";
+                        Rounds[r].Round = numOfMatches + 1;
+                        Rounds[r].ByeIn = "Yes";
                     }
                     WriteLine($"Enter the Result for the team {team[i].Name} , is it win or loss , leave byeIn to the last team");
                     team[i].Result = ReadLine();
