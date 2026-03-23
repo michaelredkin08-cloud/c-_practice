@@ -26,7 +26,7 @@ namespace ObjectOrientedChallengeFootball
             Round = round;
             Result = result;
             Team = team;
-            Result = result;
+            ByeIn = byeIn;
         }                    
     }
 }
