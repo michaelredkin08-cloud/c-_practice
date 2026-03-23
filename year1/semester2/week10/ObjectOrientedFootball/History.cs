@@ -10,10 +10,23 @@ namespace ObjectOrientedChallengeFootball
     internal class History
     {
         public List<History> Rounds = new List<History>(); 
-        public History(Team team, string result , string round , string byeIn)
+        public int Round { get; set; }
+        public string Result { get; set; }
+        public string Team { get; set; }
+        public string ByeIn { get; set; }
+        public History() // Default values
+        {
+            _byeIn = "None";
+            _team = "None";
+            _result = "None";
+            _round = -1; 
+        }
+        public History(string team, string result , int round , string byeIn)
         {
             Round = round;
-            
+            Result = result;
+            Team = team;
+            Result = result;
         }                    
     }
 }
