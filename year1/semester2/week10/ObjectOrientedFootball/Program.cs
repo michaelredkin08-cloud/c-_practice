@@ -16,6 +16,10 @@ namespace ObjectOrientedChallengeFootball
                 WriteLine("Is it home or away team");
                 team[i].Place = ReadLine();
             }
+            do
+            {
+                
+            }while();
             
         }
     }
